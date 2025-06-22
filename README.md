@@ -19,8 +19,9 @@ A RESTful Flask API backend for managing late night show episodes, guests, and t
 
 ## Installation
 1. Clone the repository
-git clone 
+```git clone 
 cd late-show-api
+```
 
 2. Create and activate a virtual environment
        ```bash
@@ -37,7 +38,7 @@ Create a .env file with your database URL and JWT secret key:
    JWT_SECRET_KEY=your_jwt_secret
 Initialize the database
 flask db upgrade
-
+```
 6. Run the server
 
       ```bash
@@ -67,7 +68,7 @@ Usage Notes Use the JWT access token from /login in the Authorization header as:
 Appearance ratings must be integers between 1 and 5.
 
 ## License
- MIT License
+ [MIT License](LICENSE)
 
 ## Author
 Alicia 
