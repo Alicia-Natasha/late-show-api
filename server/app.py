@@ -20,6 +20,15 @@ def create_app():
 
     # Import models so migrations can see them
     from models import guest, episode, appearance, user
+    from controllers.auth_controller import auth_bp
+    from controllers.episode_controller import episode_bp
+    from controllers.guest_controller import guest_bp
+    from controllers.appearance_controller import appearance_bp
+
+    app.register_blueprint(auth_bp)
+    app.register_blueprint(episode_bp)
+    app.register_blueprint(guest_bp)
+    app.register_blueprint(appearance_bp)
 
     # Register blueprints here later
     return app
