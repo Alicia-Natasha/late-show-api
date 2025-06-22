@@ -19,7 +19,7 @@ A RESTful Flask API backend for managing late night show episodes, guests, and t
 
 ## Installation
 1. Clone the repository
-```git clone 
+```git clone <github link>
 cd late-show-api
 ```
 
@@ -29,7 +29,7 @@ cd late-show-api
 source venv/bin/activate   # On Windows use `venv\Scripts\activate`
 Install dependencies
 pip install -r requirements.txt
-
+``
 4. Configure environment variables
 
 Create a .env file with your database URL and JWT secret key:
@@ -43,7 +43,7 @@ flask db upgrade
 
       ```bash
       flask run
-```
+``
 ## API Endpoints
 
 ## Authentication
